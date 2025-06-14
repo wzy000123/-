@@ -1,0 +1,163 @@
+/* 基础重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微软雅黑", sans-serif;
+  color: #333;
+  background-color: #fdf5e6; /* 暖色调背景，贴合美食主题 */
+  line-height: 1.7;
+}
+/* 头部导航 */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255,225,133); /* 红色系，呼应美食热情 */
+  padding: 10px 20px;
+}
+.logo img {
+  height: 70px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: border-bottom 0.3s;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+/* banner 区域 */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* 主体布局：两栏（首页） */
+.two-column {
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+  gap: 20px;
+}
+.two-column aside {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.two-column article,.two-column ar{
+  width: 37.5%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+/* 主体布局：三栏（详情页） */
+.three-column {
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+  gap: 20px;
+}
+.three-column .left-aside{
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.three-column .right-aside,
+.three-column .middle-article {
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+/* 美食卡片样式 */
+.food-card {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+.food-card img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.food-card h3 {
+  margin-bottom: 5px;
+}
+/* 分类、标签、评分等细节 */
+.category-list,
+.related-food {
+  list-style: none;
+  margin-left: 0;
+}
+.category-list li,
+.related-food li {
+  margin-bottom: 5px;
+}
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tag-list span {
+  background-color: #f0ad4e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.rating {
+  color: #ffc107; /* 黄色星星，模拟评分 */
+  font-size: 18px;
+}
+/* 标题、段落等排版 */
+h1, h2, h3 {
+  margin-bottom: 10px;
+  color: #d9534f; /* 红色系标题，突出美食氛围 */
+}
+h4{
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+p {
+  margin-bottom: 15px;
+}
+ol, ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+figure {
+  text-align: center;
+  margin-bottom: 15px;
+}
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* 底部样式 */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255,225,133);
+  color: #fff;
+  margin-top: 20px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
